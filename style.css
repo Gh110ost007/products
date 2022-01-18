@@ -1,13 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Poppins&display=swap');
 
 *{
     padding: 0;
     margin: 0;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
 }
 
 :root{
     font-size: 16px;
-    font-family: "Raleway";
+    font-family: "Poppins,sans serif";
     --heading-color: hsl(0, 0%, 7%);
     --date-text-color: hsl(0, 0%, 51%);
     --previous-price-text-color: hsl(0, 98%, 44%);
@@ -21,19 +23,18 @@
     /* Cards colors */
     --card-main-color : whitesmoke;
     --card-1-secondary-color: rgb(192, 82, 82);
-    --card-2-secondary-color: rgb(67,53,27);
-    --card-3-secondary-color: rgb(178,180,179);
-    --card-4-secondary-color: rgb(96,109,117);
+    --card-2-secondary-color: #9B59B6;
+    --card-3-secondary-color: #EB984E;  
+    --card-4-secondary-color: #F7DC6F;
 }
 
 html{
     width: 100%;
     height: 100%;
+
 }
 
-body{
-    /* background-color: lightcyan; */  
-}
+
 
 .container input{
     display: none;
@@ -41,7 +42,6 @@ body{
 
 .container{
     max-width: 100em;
-    /* background-color: lightgreen; */
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -53,7 +53,6 @@ body{
     box-sizing: border-box;
 }
 
-/* Card Styling */
 .card-div{
     width: 20em;
     min-height: 20em;
@@ -69,7 +68,7 @@ body{
     transition: transform 0.2s ease-in-out;
 }
 
-/* ======== General styling of all cards and heart divs ========== */
+
 .img-div{
     width: 100%;
     height: 8em;
@@ -88,7 +87,7 @@ body{
     transition: transform 0.3s ease-in-out
 }
 
-/* === Styling the like Icon ==== */
+
 .like-icon-div{
     padding: 1em 1em 0 1em;
     width: 100%;
@@ -102,7 +101,7 @@ body{
 }
 
 .like-icon-div-child{
-    /* background-color: yellow; */
+
     width: 1em;
     height: 1em;
     position: relative;
@@ -125,7 +124,6 @@ body{
 }
 
 
-/* God of war image and heart-background*/
 .gow-img-div{
     background-color: var(--card-1-secondary-color);
 }
@@ -141,13 +139,14 @@ body{
 }
 
 
-/* Sekiro image and heart-background */
+
 .sekiro-img-div{
     background-color: var(--card-2-secondary-color);
 }
 
 .sekiro-img-div img{
-    width: 45%;
+    padding-left: 30px;
+    width: 120%;
     transform: translateY(7.5%);
 }
 
@@ -156,13 +155,12 @@ body{
 }
 
 
-/* Dazai image and heart-background */
 .dazai-img-div{
     background-color: var(--card-3-secondary-color);
 }
 
 .dazai-img-div img{
-    width: 80%;
+    width: 70%;
     transform: translateY(7.5%);
 }
 
@@ -171,13 +169,14 @@ body{
     
 }
 
-/* U4 image and heart-background*/
+
 .u4-img-div{
     background-color: var(--card-4-secondary-color);
 }
 
 .u4-img-div img{
-    width: 50%;
+    padding-top: 40px;
+    width: 90%;
     transform: translateY(7.5%);
 }
 
@@ -185,7 +184,6 @@ body{
     background-color: var(--card-4-secondary-color);
 }
 
-/* ======== text Container Styling general ======== */
 
 .text-container{
     width: 100%;
@@ -216,7 +214,7 @@ body{
     color: var(--date-text-color);
 }
 
-/* === Pricing and cart div  ===== */
+
 .pricing-and-cart{
     /* background-color: wheat; */
     width: 100%;
